@@ -38,7 +38,7 @@
     <canvas id="c"></canvas>
 
 <script>
-const MONSTER_IMAGE_URL = 'https://i.postimg.cc/CMZKZHp1/skibidi.jpg';
+const MONSTER_IMAGE_URL = 'https://i.postimg.cc/Th8G6kVR/mr-breat-removebg-preview.png';
 const canvas = document.getElementById('c'), mCanvas = document.getElementById('m-canvas'), mCtx = mCanvas.getContext('2d'), gl = canvas.getContext('webgl2');
 
 const MAP = { W: 290, H: 390 };
@@ -230,4 +230,5 @@ function draw(mesh, pos, rotY = 0) {
 function endGame(m) { STATE.over=true; document.getElementById('overlay').style.display='flex'; document.getElementById('msg').innerText=m; if(document.pointerLockElement) document.exitPointerLock(); }
 </script>
 </body>
+
 </html>
